@@ -45,7 +45,6 @@ class LMap(id: String, options: UndefOr[LMapOptions]) extends LEventEmitter {
   def remove(): LMap = js.native
 
   //Methods for Getting Map State
-
   def getCenter(): LLatLng = js.native
 
   def getZoom(): Double = js.native

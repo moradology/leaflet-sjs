@@ -11,8 +11,10 @@ import scala.scalajs.js.{UndefOr, undefined}
 @js.native
 trait LEvent extends js.Object {
 
-  @JSName("type") // TODO  not working - check it
+  // TODO  fix this - seems not to work
+  @JSName("type")
   val tpe: String = js.native
+
   @JSName("type") val eventType: String = js.native
   val target: js.Dynamic = js.native
 }
@@ -90,7 +92,7 @@ trait LDragEndEvent extends LEvent {
 
 @js.native
 trait LEventEmitter extends js.Object {
-  //TODO check this variance later!
+  // TODO check this variance
   def on[LEventType <: LEvent](name: String, listener: js.Function1[LEventType, Any], context: UndefOr[js.Object] = undefined): this.type = js.native
 
   def off[LEventType <: LEvent](name: String, listener: js.Function1[LEventType, Any], context: UndefOr[js.Object] = undefined): this.type = js.native

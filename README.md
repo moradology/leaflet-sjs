@@ -1,9 +1,9 @@
 # A Leaflet Wrapper for ScalaJS
 
 This project aims to expose the the mapping functionality of
-(leaflet.js)[http://leafletjs.com/) to those writing frontend
+[leaflet.js](http://leafletjs.com/) to those writing frontend
 applications in ScalaJS. Much of this code was ported from an example
-facade written by (chandu0101)[https://github.com/chandu0101], to whom
+facade written by [chandu0101](https://github.com/chandu0101), to whom
 much is owed.
 
 If you're familiar with the [leaflet
